@@ -1,38 +1,68 @@
-.App {
+.container-options{
+  margin-top: 2em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.similarArtistsContainer{
+  margin: 0 auto;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.similarArtistsContainer a, .similarTracksContainer a{
+  color: red;
+  text-decoration: none;
+}
+
+.similarArtistsContainer img{
+  height: 100px;
+  width: 100px;
+  border-radius: 5%;
+}
+
+.similarTracksContainer{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.similarArtistsBox{
+  margin: 1em auto;
+  max-width: 300px;
+  padding: 2em;
+  /*box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;*/
+}
+
+#btn-search-similar-artists, #btn-search-similar-tracks{
+  padding: 0.3em;
+  background-color: red;
+  border-radius: none;
+  color: #fff;
+  border-color: red;
+  cursor: pointer;
+}
+
+#search-input, #search-input-showtracks-artist, #search-input-showtracks-track{
+  border-style: solid;
+  border-color: red;
+  padding: 0.3em;
+  outline: none;
+}
+
+.similarTracksBox{
+  margin: 1em auto;
+  max-width: 300px;
+  padding: 2em;
+}
+
+@media (max-width: 500px){
+
+  #similar-tracks-form input{
+    margin: 0.5em auto;
+    display: block;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  #btn-search-similar-tracks{
+    width: 20%;
   }
 }
