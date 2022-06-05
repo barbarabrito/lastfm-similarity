@@ -16,7 +16,9 @@ This app is built with:
 ```
 npm install
 ```
-3. Run the app:
+3. You'll need a lastfm [API key](https://www.last.fm/api/account/create) to apply to the environment variable `REACT_APP_API_KEY`
+
+4. Run the app:
 ```
 npm start
 ```
@@ -41,7 +43,8 @@ Tecnologias utilizadas:
 ```
 npm install
 ```
-3. Para rodar o app:
+3. Você vai precisar de uma [API key](https://www.last.fm/api/account/create) para aplicar à variável de ambiente `REACT_APP_API_KEY`
+4. Para rodar o app:
 ```
 npm start
 ```
