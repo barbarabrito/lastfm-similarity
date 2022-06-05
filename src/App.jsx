@@ -52,25 +52,27 @@ function App() {
   }
 
   return (
+    
     <div className="App">
 
       <div className="container-options">
-        <input type="radio" id="select-option-artists" name="option-search" value="artists" defaultChecked={true}
-         onChange={handleChangeArtists}
-        />
-        <label htmlFor="select-option-artists">Search for similar artists</label>
-        &nbsp;
-        <input type="radio" id="select-option-tracks" name="option-search" value="tracks"
-          onChange={handleChangeTracks}
-        />
-        <label htmlFor="select-option-tracks">Search for similar tracks</label>
+         <label htmlFor="select-option-artists">
+           <input type="radio" id="select-option-artists" name="option-search" value="artists" defaultChecked={true}
+           onChange={handleChangeArtists}/>
+           &nbsp;Search for similar artists
+        </label>
+        <label htmlFor="select-option-tracks">
+          <input type="radio" id="select-option-tracks" name="option-search" value="tracks"
+            onChange={handleChangeTracks}
+          />
+           &nbsp;Search for similar tracks
+        </label>
       </div>
 
       { showArtists ? (
       
         <div className="similarArtistsContainer">
 
-          <br/>
           <form onSubmit={handleSubmitSearchArtists} id="similar-artists-form">
             <input type="text" 
             value={artist}
@@ -96,8 +98,8 @@ function App() {
       {showTracks ? (
 
         <div className="similarTracksContainer">
-          <br/>
-          <form onSubmit={handleSubmitSearchTracks} id="similar-tracks-form">
+
+          <form onSubmit={handleSubmitSearchTracks} id="similar-tracks-form">      
             <input type="text" 
             value={artist}
             onChange={(e) => setArtist(e.target.value)}
@@ -111,6 +113,7 @@ function App() {
             placeholder="track name"
             />
             <button id="btn-search-similar-tracks">Search</button>
+           
           </form>
           {
             similarTracks.map(track => (

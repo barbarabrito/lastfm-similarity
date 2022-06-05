@@ -7,7 +7,7 @@ This app is built with:
 
 - [React.js](https://reactjs.org/docs/getting-started.html)
 - [axios](https://axios-http.com/docs/intro)
-- [uuid](https://www.npmjs.com/package/uuid) (for random generated ids)
+- [uuid](https://www.npmjs.com/package/uuid) (for randomly generated ids)
 
 ### Instructions to run the app locally*:
 
@@ -48,3 +48,5 @@ npm start
 <sup>*Você precisa ter o node.js instalado na sua máquina</sup>
 
 obs: a funcionalidade que procura por tracks similares ainda precisa de ajustes. Ainda trabalhando nisso.
+
+![preview image](preview/print.png)

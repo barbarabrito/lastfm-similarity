@@ -1,14 +1,28 @@
-.container-options{
-  margin-top: 2em;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html, body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+.container-options{
 
-.similarArtistsContainer{
+  margin: 2em auto 0.8em auto;
+  text-align: center;
+  color: #4D4C7D;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+}
+
+.container-options label{
+  margin: 0 0.3em;
+}
+
+.similarArtistsContainer, .similarTracksContainer{
   margin: 0 auto;
   text-align: center;
 }
-
 
 .similarArtistsContainer a, .similarTracksContainer a{
   color: red;
@@ -21,16 +35,11 @@
   border-radius: 5%;
 }
 
-.similarTracksContainer{
-  margin: 0 auto;
-  text-align: center;
-}
-
 .similarArtistsBox{
   margin: 1em auto;
   max-width: 300px;
   padding: 2em;
-  /*box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;*/
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 #btn-search-similar-artists, #btn-search-similar-tracks{
@@ -49,20 +58,30 @@
   outline: none;
 }
 
+#similar-artists-form, #similar-tracks-form{
+  margin: auto;
+  width: 300px;
+  display: block;
+}
+
+#similar-artists-form input, #similar-tracks-form input{
+  margin: 0.3em auto;
+  width: 100%;
+}
+
+#btn-search-similar-artists, #btn-search-similar-tracks{
+  width: 100%;
+}
+
 .similarTracksBox{
   margin: 1em auto;
   max-width: 300px;
   padding: 2em;
 }
 
-@media (max-width: 500px){
-
-  #similar-tracks-form input{
-    margin: 0.5em auto;
+@media (max-width: 600px){
+  .container-options label{
     display: block;
-  }
-
-  #btn-search-similar-tracks{
-    width: 20%;
+    margin: 0.3em 0;
   }
 }
