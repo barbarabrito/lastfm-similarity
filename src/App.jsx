@@ -69,7 +69,7 @@ function App() {
         </label>
       </div>
 
-      { showArtists ? (
+      { showArtists &&
       
         <div className="similarArtistsContainer">
 
@@ -93,9 +93,8 @@ function App() {
               ))
           }
         </div>
-        ) : null
       }
-      {showTracks ? (
+      {showTracks &&
 
         <div className="similarTracksContainer">
 
@@ -125,10 +124,9 @@ function App() {
               ))
           }
         </div>
-        ) : null
       }
     </div>
-    );
+  );
 }
 
 export default App;
